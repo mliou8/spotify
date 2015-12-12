@@ -6,6 +6,7 @@ var io = require('socket.io')(http);
 
 // app.use('/socketConfig.js', express.static(__dirname+'/socketConfig.js'));
 app.use('/public', express.static(__dirname+'/public'));
+app.use('/node_modules', express.static(__dirname+'/node_modules'));
 
 app.get('/', function(req, res, next) {
 		res.sendFile(__dirname+'/index.html');

@@ -2,15 +2,20 @@
 <html>
 		<head>
 				<title>Socket.IO chat</title>
-
+				<link href="/public/styles/stylesheet.css" type="text/css" rel="stylesheet" />
+				<script src="/socket.io/socket.io.js"></script>
+				<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+				<script src="/node_modules/angular/angular.js"></script>
+				<script src="/public/js/socketConfig.js"> </script>
 		</head>
 		<body>
 				<ul id="messages"></ul>
 				<form action="" ng-submit="submit()">
 						<input id="m" autocomplete="off" /><button>Send</button>
 				</form>
-				<script src="/socket.io/socket.io.js"></script>
-				<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-				<script src="/public/js/socketConfig.js"> </script>
+				<div ng-app="">
+
+				</div>
+
 		</body>
 </html>
